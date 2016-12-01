@@ -1,0 +1,259 @@
+body {
+  background-color: #2c3e50;
+}
+
+/********************
+Calculator Container
+********************/
+
+.cal-con {
+  width: 30em;;
+  height: 650px;
+  margin: 8% auto;
+  background: rgba(11, 111, 111, 1);
+  border-radius: 35px;
+  box-shadow: 1px 0px 70px 1px black;
+  transform: scale(1);
+}
+
+* {
+  font-family: arial;
+}
+
+/********************
+Calculator
+********************/
+
+.cal {
+  width: 22.2em;
+  max-width: 22.2em;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 4em;
+}
+
+/********************
+Calculator Screen
+********************/
+
+.cal-view {
+  height: 68px;
+  width: 100%;
+  background-color: lightgrey;
+  margin-bottom: 0.8em;
+  border-radius: 5px;
+  box-shadow: inset 0px 2px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+/********************
+Calculator digits
+********************/
+
+#view-num {
+  text-align: right;
+  font-size: 1.9em;
+  padding-right: 0.3em;
+}
+
+/***************************
+Calculator Buttons Container
+****************************/
+
+.cal-buttons1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 23.8em;
+  justify-content: flex-end;
+}
+
+
+
+.num-con {
+  float: left;
+  width: 22em;
+  position: relative;
+}
+
+.num-pad {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/** Top Numbers **/
+
+.top {
+  display: flex;
+}
+
+/** Middle Numbers **/
+.center {
+  display: flex;
+}
+
+/** Bottom Numbers **/
+
+.bottom {
+  display: flex;
+}
+
+/***********************************
+Number and Operator Button Container
+************************************/
+
+.op-con {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  height: 23em;
+}
+
+/** Vertical Row Operators **/
+
+.op-top {
+  height: 20em;
+}
+
+.op-top .op {
+  min-height: 1em;
+  margin-bottom: 0.2em;
+}
+
+/** Horizontal Row Operators **/
+.op-bottom {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0.1em;
+  width: 16em;
+  justify-content: space-around;
+}
+
+.op-bottom .op {
+  min-width: 0.6em;
+  margin-right: 0.8px;
+}
+
+
+.cl {
+  padding: 2.007em;
+  background-color: dimgrey;
+  color: white;
+  margin: 0.1em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px black;
+  cursor: pointer;
+  transition: 0.1s ease;
+}
+
+.num {
+  margin-right: 0.25em;
+}
+
+.button0 {
+  width: 0.6em;
+}
+
+.cl::selection {
+  color: #fff;
+}
+
+
+.cl:active {
+  box-shadow: 1px 0px 0px black;
+  background-color: grey;
+}
+
+.cal-buttons2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.4em;
+  flex-direction: row;
+  position: relative;
+  width: 21.56em;
+  left: .39em;
+}
+
+.cal-buttons2 .cl2 {
+  flex: 1;
+  color: white;
+  text-align: center;
+  margin: 0.1em;
+  padding: 1.4em;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-radius: 7px;
+  box-shadow: 1px 1px 7px black;
+  cursor: pointer;
+  transition: 0.1s ease;
+  position: relative;
+}
+
+.cl2::selection {
+  color: #fff;
+}
+
+.cl2:nth-child(1) {
+  flex: 2.7;
+}
+
+.op {
+  background-color: chocolate;
+}
+
+.op:active {
+  background-color: darkorange;
+}
+
+.cal-buttons2 .button16 {
+ background-color: rgba(205, 0, 0, 1);
+}
+
+.cal-buttons2 .button16:active {
+  background-color: rgba(255, 0, 10, 1);
+  box-shadow: 1px 0px 0px black;
+}
+
+.cal-buttons2 .button17 {
+ background-color: rgba(5, 110, 220, 1);
+}
+
+.cal-buttons2 .button17:active {
+  background-color: rgba(5, 150, 250, 1);
+  box-shadow: 1px 0px 0px black;
+}
+
+.cal-buttons2 .button18 {
+  background-color: rgba(0, 100, 0, 1);
+}
+
+.cal-buttons2 .button18:active {
+  background-color: rgba(0, 190, 0, 1);
+  box-shadow: 1px 0px 0px black;
+}
+
+/********************
+Media Queries
+********************/
+
+@media screen and (max-width: 30em) {
+  .cal {
+    padding-top: 4em;
+    margin: 0.1em;
+    margin: 0 auto;
+  }
+  .cal-con {
+    width: 100%;
+    min-width: 28em;
+    transform: scale(.95);
+    margin: 0% 0%;
+  }
+}

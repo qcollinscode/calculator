@@ -13,5 +13,5 @@
 * The conditional (ternary) operator
 * If statement shorthand
 
-This is how the music player currently look.
+This is how the calculator look currently.
 <img src="assets/pics/projectimage.png">

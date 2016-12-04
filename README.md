@@ -1,6 +1,8 @@
 # Calculator
 <strong>Language: HTML/CSS+JavaScript</strong>
 
+A simple calculator.
+
 **Phase:**
 * Project Scope: Complete
 * Wireframes and Architecture: Complete

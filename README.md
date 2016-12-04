@@ -11,7 +11,7 @@ A simple calculator.
 * Testing: Complete
 * Deployment: Complete
 
-**Things Learned:**
+**Things I've Learned:**
 * The conditional (ternary) operator
 * If statement shorthand
 

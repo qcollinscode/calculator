@@ -9,9 +9,6 @@ var clearScreen = function() { viewNum.innerHTML += blank; }
 function _(id) {
   return document.querySelectorAll(id);
 }
-function _onClick() {
-  
-}
 
 // Loops until there are no more number buttons.
 for (i = 0; i < numButtonsLength; i++) {
